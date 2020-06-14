@@ -44,6 +44,10 @@ func main() {
 
 	fmt.Println("Shapes")
 	for _, x := range shapes {
-		fmt.Printf("%T\t%v\t%v\n", x, x, x.area())
+		info(x)
 	}
+}
+
+func info(s shape) {
+	fmt.Printf("%T\t%v\t%v\n", s, s, s.area())
 }
