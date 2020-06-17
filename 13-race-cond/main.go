@@ -7,6 +7,9 @@ import (
 )
 
 func main() {
+	raceConditionDemo()
+}
+func raceConditionDemo() {
 	fmt.Println("NumCPU", runtime.NumCPU())
 	fmt.Println("NumGoRoutine", runtime.NumGoroutine())
 	counter := 0
@@ -20,8 +23,8 @@ func main() {
 			v++
 			counter = v
 			wg.Done()
-			fmt.Println("NumGoRoutine", runtime.NumGoroutine())
 		}()
+		fmt.Println("NumGoRoutine", runtime.NumGoroutine())
 	}
 
 	wg.Wait()
