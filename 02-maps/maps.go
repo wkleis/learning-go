@@ -1,5 +1,6 @@
 package main
 
+// from Udemy course https://www.udemy.com/course/learn-how-to-code/ by Todd McLeod
 import (
 	"fmt"
 )
