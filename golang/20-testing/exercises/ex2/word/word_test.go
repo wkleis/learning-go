@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wkleis/learning-go/20-testing/exercises/ex2/quote"
+	"github.com/wkleis/learning-go/golang/20-testing/exercises/ex2/quote"
 )
 
 func TestCount(t *testing.T) {

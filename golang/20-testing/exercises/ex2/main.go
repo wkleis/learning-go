@@ -5,8 +5,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/wkleis/learning-go/20-testing/exercises/ex2/quote"
-	"github.com/wkleis/learning-go/20-testing/exercises/ex2/word"
+	"github.com/wkleis/learning-go/golang/20-testing/exercises/ex2/quote"
+	"github.com/wkleis/learning-go/golang/20-testing/exercises/ex2/word"
 )
 
 func main() {
