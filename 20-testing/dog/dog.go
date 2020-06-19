@@ -11,10 +11,12 @@ type Dog struct {
 	Age  int
 }
 
+//Info returns  astring with informaion about the dog
 func (d Dog) Info() string {
 	return fmt.Sprintf("Dog '%s' age: %d (human years) or %d (dog years)", d.Name, d.Age, d.DogYears())
 }
 
+//DogYears returns the age of the dog as dog ywears (not human years)
 func (d Dog) DogYears() int {
 	return d.Age * 7
 }

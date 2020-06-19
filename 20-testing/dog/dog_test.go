@@ -23,23 +23,25 @@ func TestDogYears(t *testing.T) {
 
 func TestDogInfo(t *testing.T) {
 	got := dog.Info()
-	if got == "" {
-		t.Errorf("Info(): got empty string, want: non-empty string")
-		return
-	}
-	if !strings.Contains(got, dog.Name) {
-		t.Errorf("Info(): got '%s', want: string that contains dog's name '%s'", got, dog.Name)
-	}
-	ageString := strconv.Itoa(dog.Age)
-	if !strings.Contains(got, ageString) {
-		t.Errorf("Info(): got '%s', want: string that contains dog's age '%s'", got, ageString)
-	}
-}
-
-func ExampleDog_Info() {
-	fmt.Println(dog.Info())
-	//Output:
-	//Dog 'Fifi' age: 2 (human years) or 14 (dog years)
+	// contains 3 sub tests
+	t.Run("NotEmpty", func(t *testing.T) {
+		if got == "" {
+			t.Errorf("Info(): got empty string, want: non-empty string")
+			t.FailNow()
+		}
+	})
+	t.Run("ContainsName", func(t *testing.T) {
+		want := dog.Name
+		if !strings.Contains(got, want) {
+			t.Errorf("Info(): got '%s', want: string that contains dog's name '%s'", got, want)
+		}
+	})
+	t.Run("ContainsAge", func(t *testing.T) {
+		want := strconv.Itoa(dog.Age)
+		if !strings.Contains(got, want) {
+			t.Errorf("Info(): got '%s', want: string that contains dog's age '%s'", got, want)
+		}
+	})
 }
 
 //run all benchmarks: go test --bench .
