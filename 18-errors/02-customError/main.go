@@ -4,6 +4,17 @@ import (
 	"fmt"
 )
 
+/*
+in Go, error is an interface!
+
+type error interface{
+  Error() string
+}
+
+what ever implements the Error() method is an error in Go
+the method shall return a decsription of the error, for exmaple for logging
+*/
+
 type FooError struct {
 	message string
 	code    int
