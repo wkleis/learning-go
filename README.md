@@ -1,4 +1,4 @@
-# Learning GoO
+# Learning Go
 
 In this repo, there is just some basic exercises I did while learning Golang with Udemy online courses 
 * [Learn How To Code: Google"s Go](https://www.udemy.com/course/learn-how-to-code/)
