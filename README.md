@@ -1,6 +1,6 @@
 # Learning Go
 
-In this repo, there is just some basic exercises I did while learning Golang with Udemy online courses 
+In this repo, there are just some basic exercises I did while learning Golang with Udemy online courses 
 * [Learn How To Code: Google"s Go](https://www.udemy.com/course/learn-how-to-code/)
 * [Web Development with Google"s Go](https://www.udemy.com/course/go-programming-language) 
 both by Todd McLeod
